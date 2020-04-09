@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Younder-BFF</name>
+    </assembly>
+    <members>
+        <member name="T:Younder_BFF.ConfigureSwaggerOptions">
+            <summary>
+            Classe de Configuração de versões no Swagger
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Provider
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:Younder_BFF.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Configura as versões no swagger
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:Younder_BFF.EF.BancoDadosContext">
+            <summary>
+            DbContext
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.EF.BancoDadosContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+            <summary>
+            DbContext
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.EF.BancoDadosContext.Usuarios">
+            <summary>
+            Tabela que contem as colunas de acordo com Layout, Tipo de Registro, etc...
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.EF.BancoDadosContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            On Configuring;
+            </summary>
+        </member>
+        <member name="T:Younder_BFF.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.Program.Main(System.String[])">
+            <summary>
+            Entrypoint
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Younder_BFF.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Younder_BFF.v1.Models.Sexo">
+            <summary>
+            Classe de Sexos
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Sexo.SexoId">
+            <summary>
+            Id do Sexo
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Sexo.Descricao">
+            <summary>
+            //Descricao do Sexo com tamanho maximo de 15 caracteres;
+            </summary>
+        </member>
+        <member name="T:Younder_BFF.v1.Models.Usuario">
+            <summary>
+            Classe de Usuarios
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.UserId">
+            <summary>
+            Id do usuario
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.Nome">
+            <summary>
+            Nome
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.DataNascimento">
+            <summary>
+            Data de Nascimento
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.Senha">
+            <summary>
+            Senha
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.Ativo">
+            <summary>
+            Usuario Ativo
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.SexoId">
+            <summary>
+            Sexo do Usuario
+            </summary>
+        </member>
+        <member name="P:Younder_BFF.v1.Models.Usuario.Sexo">
+            <summary>
+            Id do File
+            </summary>
+        </member>
+        <member name="T:Younder_BFF.v1.Services.IUsuarioService">
+            <summary>
+            Interface User Service
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.Add``1(``0)">
+            <summary>
+            Add
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.Update``1(``0)">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.Delete``1(``0)">
+            <summary>
+            Delete
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.SaveChangesAsync">
+            <summary>
+            Save
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.GetAllUsersAsync">
+            <summary>
+            Get Users
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.GetUserByEmail(System.String)">
+            <summary>
+            GetUserByEmail
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.IUsuarioService.GetUserByIdAsync(System.Int32)">
+            <summary>
+            GetUserById
+            </summary>
+        </member>
+        <member name="T:Younder_BFF.v1.Services.UsuarioService">
+            <summary>
+            Classe UserService
+            </summary>
+        </member>
+        <member name="F:Younder_BFF.v1.Services.UsuarioService._context">
+            <summary>
+            IntegradorSaudeBDContext
+            </summary>
+        </member>
+        <member name="F:Younder_BFF.v1.Services.UsuarioService._configuration">
+            <summary>
+            IntegradorSaudeBDContext
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.#ctor(Younder_BFF.EF.BancoDadosContext,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            IntegradorSaudeBDContext
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.Add``1(``0)">
+            <summary>
+            Add
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.Update``1(``0)">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.Delete``1(``0)">
+            <summary>
+            Delete
+            </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.SaveChangesAsync">
+             <summary>
+            Save
+             </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.GetAllUsersAsync">
+             <summary>
+            GetUsers
+             </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.GetUserByEmail(System.String)">
+             <summary>
+            GetUserAsyncByEmail
+             </summary>
+        </member>
+        <member name="M:Younder_BFF.v1.Services.UsuarioService.GetUserByIdAsync(System.Int32)">
+             <summary>
+            GetUserAsyncByID
+             </summary>
+        </member>
+        <member name="T:Younder-BFF.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:Younder-BFF.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Younder-BFF.Startup.Configuration">
+            <summary>
+            Configuration Field
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Younder-BFF.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Younder-BFF.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="provider"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:Younder-BFF.v1.Controllers.UsuarioController">
+            <summary>
+            Usuario Controller;
+            </summary>
+        </member>
+        <member name="F:Younder-BFF.v1.Controllers.UsuarioController._repo">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:Younder-BFF.v1.Controllers.UsuarioController.#ctor(Younder_BFF.v1.Services.IUsuarioService)">
+            <summary>
+            context
+            </summary>
+        </member>
+        <member name="M:Younder-BFF.v1.Controllers.UsuarioController.Get">
+            <summary>
+            Get Users
+            </summary>
+        </member>
+    </members>
+</doc>
